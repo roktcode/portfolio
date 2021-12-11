@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--margin: 1rem;
+	--big-margin: 2rem;
+	--padding: 1rem;
+	--gap: 1rem;
+	--big-gap: 2rem;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+nav {
+	margin-top: 1rem;
+	z-index: 1;
+	background-color: #eee;
+}
+
+nav a {
+	color: #333;
+}
+
+nav .title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+nav ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+#about {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2rem;
+	padding: var(--pading);
+	gap: 1rem;
+	padding: var(--padding);
+}
+
+/* the avatar image */
+#avatar {
+	max-width: 250px;
+	border-radius: 5px;
+}
+
+#about .text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#skills {
+	margin-top: var(--margin);
+	padding: var(--padding);
+}
+
+#skills .title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#skills .text {
+	margin-top: var(--margin);
+}
+
+#projects {
+	margin-top: var(--margin);
+	padding: var(--padding);
+}
+
+#projects .title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: var(--gap);
+}
+
+.projects {
+	margin-top: var(--margin);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: var(--big-gap);
+}
+
+.project {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.project img {
+	max-width: 200px;
+}
+
+#contact {
+	margin-top: var(--margin);
+	padding: var(--padding);
+}
+
+#contact .title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: var(--margin);
+}
+
+#contact .links {
+	margin-top: var(--big-margin);
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap);
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: var(--big-margin);
+	padding: var(--padding);
+}
+
+.container {
+	max-width: 600px;
+}
+
+@media (min-width: 600px) {
+	.projects {
+		flex-direction: row;
+		margin-top: var(--big-margin);
+	}
+
+	.project {
+		min-height: 211px;
+		justify-content: space-between;
+	}
+}
